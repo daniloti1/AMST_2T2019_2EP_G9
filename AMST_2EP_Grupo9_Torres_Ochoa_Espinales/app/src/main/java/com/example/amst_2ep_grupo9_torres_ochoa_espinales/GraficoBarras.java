@@ -6,6 +6,10 @@ import android.os.Bundle;
 
 public class GraficoBarras extends AppCompatActivity {
 
+    public BarChart graficoBarras;
+    private RequestQueue ListaRequest = null;
+    private String token = "eyJ0eXAi………………………-mMIArvMc";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -14,7 +14,7 @@
         android:padding="10dp"
         android:id="@+id/contenedor">
         <TextView
-            android:id="@+id/textResultado"
+            android:id="@+id/textHabilidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Habilidades"
