@@ -22,9 +22,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:orientation="horizontal">
         </LinearLayout>
+
         <LinearLayout
-            android:id="@+id/cont_heroes" android:layout_width="match_parent"
-            android:layout_height="match_parent" android:orientation="vertical" >
-        </LinearLayout>
+            android:id="@+id/cont_heroes"
+            android:layout_width="match_parent"
+            android:layout_height="593dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <EditText
+            android:id="@+id/id_heroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Id del heroe"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buscar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ir"
+            android:text="Ir" />
     </LinearLayout>
 </ScrollView>
