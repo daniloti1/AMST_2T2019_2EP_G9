@@ -17,7 +17,7 @@
         android:layout_marginRight="47dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="Aplicaicones moviles y sistemas telematicos"
+        android:text="Aplicaciones moviles y sistemas telematicos"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"

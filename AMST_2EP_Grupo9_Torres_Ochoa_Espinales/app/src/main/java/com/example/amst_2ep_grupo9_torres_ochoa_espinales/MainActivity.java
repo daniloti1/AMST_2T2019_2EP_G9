@@ -34,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
          */
     }
 
+    public void imprimirResponse(JSONObject response) {
+        try {
+            System.out.println(response.get("response"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void buscarHeroe(){
         String url_api = "https://superheroapi.com/api/2979915212042299/1";
 
@@ -55,9 +63,12 @@ public class MainActivity extends AppCompatActivity {
         });
         */
 
+        System.out.println("antes del request");
         JsonObjectRequest heroes = new JsonObjectRequest(Request.Method.GET, url_api, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                System.out.println("on response");
+                imprimirResponse(response);
                 try {
                     System.out.println(response.get("response"));
                 } catch (JSONException e) {
@@ -69,11 +80,13 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                System.out.println("Error");
                 //System.out.println(error);
             }
         });
-        System.out.println(heroes);
-        System.out.println(j);
+
+        //System.out.println(heroes.getTimeoutMs());
+        //System.out.println(heroes.hasHadResponseDelivered());
 
 
     }
